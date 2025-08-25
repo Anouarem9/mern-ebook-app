@@ -1,6 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CreateEBook from "./pages/EBook/CreateEBook";
+
+import CreateEBook from "./pages/EBook/CreateEBook/CreateEBook";
+import ListingEBooks from "./pages/EBook/ListingEBooks/ListingEBooks";
+import ShowEbook from "./pages/EBook/ShowEbook/ShowEbook";
 
 function App() {
   return (
@@ -11,8 +14,9 @@ function App() {
       <br />
       <br />
       <Routes>
-        <Route path="/" element={<>Landing Page</>} />
+        <Route path="/" element={<ListingEBooks />} />
         <Route path="/create" element={<CreateEBook />} />
+        <Route path="/:ISBN" element={<ShowEbook />} />
       </Routes>
     </Router>
   );

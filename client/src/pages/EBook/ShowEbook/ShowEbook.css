@@ -1,0 +1,66 @@
+.ebook-detail {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.ebook-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.ebook-image {
+  width: 250px;
+  object-fit: cover;
+}
+
+.ebook-info {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.ebook-info h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.ebook-category {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.ebook-description {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+.ebook-meta {
+  font-size: 0.9rem;
+  color: #777;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ebook-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.ebook-info a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
